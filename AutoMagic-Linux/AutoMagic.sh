@@ -34,5 +34,4 @@ echo "........................"
 echo "Everything is done !! 
 AutoMagic Script by Channel+"
 echo "___________________________________________________________"
-echo "Logging out...."; xfce4-session-logout --logout
 exit
