@@ -29,9 +29,7 @@ echo "___________________________________________________________"
 echo "Creating Shortcuts...."; wget -P /home/Cloud/AutoMagic https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts.zip &> /dev/null && unzip /home/Cloud/AutoMagic/Shortcuts.zip -d /home/Cloud/Desktop &> /dev/null
 echo "Shortcuts Created"
 echo "___________________________________________________________"
-echo "A Little Housekeeping..."; rm -r /home/Cloud/AutoMagic && rm /home/Cloud/AutoMagic.sh
-echo "........................"
-echo "Everything is done !! 
-AutoMagic Script by Channel+"
+echo "Cleaning up..."; rm -r /home/Cloud/AutoMagic && rm /home/Cloud/AutoMagic.sh
+echo "Everything is done !! AutoMagic Script by Channel+"
 echo "___________________________________________________________"
 exit
