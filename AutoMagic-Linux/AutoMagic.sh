@@ -8,7 +8,7 @@ echo "___________________________________________________________"
 echo "Configuring Wallpapers..."; wget -P /home/Cloud/AutoMagic https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Wallpapers.zip &> /dev/null && unzip /home/Cloud/AutoMagic/Wallpapers.zip -d /home/Cloud/Pictures &> /dev/null && xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/last-image -s /home/Cloud/Pictures/5.jpeg &> /dev/null
 echo "Wallpapers Configured"
 echo "___________________________________________________________"
-echo "Installing Telegram....."; wget -P /home/Cloud/AutoMagic https://updates.tdesktop.com/tlinux/tsetup.2.9.2.tar.xz &> /dev/null && cd /home/Cloud/AutoMagic &> /dev/null && tar xf /home/Cloud/AutoMagic/T* &> /dev/null && mkdir /home/Cloud/Apps/ &> /dev/null && mv /home/Cloud/AutoMagic/Telegram /home/Cloud/Apps/Telegram &> /dev/null
+echo "Installing Telegram....."; wget -P /home/Cloud/AutoMagic https://updates.tdesktop.com/tlinux/tsetup.2.9.2.tar.xz &> /dev/null && tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/AutoMagic &> /dev/null && mkdir /home/Cloud/Apps/ &> /dev/null && mv /home/Cloud/AutoMagic/Telegram /home/Cloud/Apps/Telegram &> /dev/null
 echo "Telegram Installed";
 echo "___________________________________________________________"
 echo "Installing LosslessCut....."; wget -P /home/Cloud/Apps/LosslessCut https://github.com/mifi/lossless-cut/releases/download/v3.39.0/LosslessCut-linux.AppImage &> /dev/null && chmod a+x /home/Cloud/Apps/LosslessCut/LosslessCut-linux.AppImage &> /dev/null
@@ -34,3 +34,5 @@ echo "........................"
 echo "Everything is done !! 
 AutoMagic Script by Channel+"
 echo "___________________________________________________________"
+echo "Logging out...."; xfce4-session-logout --logout
+exit
