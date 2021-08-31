@@ -8,7 +8,7 @@ echo "___________________________________________________________"
 echo "Configuring Wallpapers..."; wget -P /home/Cloud/AutoMagic https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Wallpapers.zip &> /dev/null && unzip /home/Cloud/AutoMagic/Wallpapers.zip -d /home/Cloud/Pictures &> /dev/null && xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/last-image -s /home/Cloud/Pictures/5.jpeg &> /dev/null
 echo "Wallpapers Configured"
 echo "___________________________________________________________"
-echo "Installing Telegram....."; sudo apt install telegram-desktop &> /dev/null && mkdir /home/Cloud/Apps/ &> /dev/null 
+echo "Installing Telegram....."; wget -P /home/Cloud/AutoMagic https://updates.tdesktop.com/tlinux/tsetup.2.9.2.tar.xz &> /dev/null && mkdir /home/Cloud/Apps/ &> /dev/null && tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/Apps 
 echo "Telegram Installed";
 echo "___________________________________________________________"
 echo "Installing LosslessCut....."; wget -P /home/Cloud/Apps/LosslessCut https://github.com/mifi/lossless-cut/releases/download/v3.39.0/LosslessCut-linux.AppImage &> /dev/null && chmod a+x /home/Cloud/Apps/LosslessCut/LosslessCut-linux.AppImage &> /dev/null
