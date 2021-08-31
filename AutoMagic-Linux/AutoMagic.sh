@@ -14,7 +14,7 @@ echo "___________________________________________________________"
 echo "Installing LosslessCut....."; wget -P /home/Cloud/Apps/LosslessCut https://github.com/mifi/lossless-cut/releases/download/v3.39.0/LosslessCut-linux.AppImage &> /dev/null && chmod a+x /home/Cloud/Apps/LosslessCut/LosslessCut-linux.AppImage &> /dev/null
 echo "LosslessCut Installed"
 echo "___________________________________________________________"
-echo "Installing XDM....."; wget -P /home/Cloud/AutoMagic https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz &> /dev/null && tar xf /home/Cloud/AutoMagic/xdm* &> /dev/null && sudo /home/Cloud/AutoMagic/install.sh &> /dev/null
+echo "Installing XDM....."; wget -P /home/Cloud/AutoMagic https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz &> /dev/null && tar xf /home/Cloud/AutoMagic/xdm* -C /home/Cloud/AutoMagic &> /dev/null && sudo /home/Cloud/AutoMagic/install.sh &> /dev/null
 echo "XDM Installed"
 echo "___________________________________________________________"
 echo "Installing Archive Manager....."; sudo apt-get install file-roller &> /dev/null && sudo apt install unace rar unrar unar p7zip-rar p7zip p7zip-full zip unzip &> /dev/null && sudo apt install uudeview mpack arj cabextract lzip lunzip lzop rzip unalz sharutils &> /dev/null
