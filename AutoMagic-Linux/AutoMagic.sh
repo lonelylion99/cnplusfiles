@@ -36,6 +36,7 @@ echo "Installing Sublime (Notepad)"; wget -qO - https://download.sublimetext.com
 echo "...done"
 echo "___________________________________________________________"
 echo "Downloading Icons....."; wget -P /home/Cloud/AutoMagic https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons.zip &> /dev/null && unzip /home/Cloud/AutoMagic/Icons.zip -d /home/Cloud/Documents &> /dev/null
+wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/HandBrake.png
 echo "...done"
 echo "___________________________________________________________"
 echo "Creating Shortcuts...."; 
