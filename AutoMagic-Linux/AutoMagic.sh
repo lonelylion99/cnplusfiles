@@ -18,6 +18,11 @@ echo "...downloading"; wget -P /home/Cloud/Apps/LosslessCut https://github.com/m
 echo "...marking as an executable"; chmod a+x /home/Cloud/Apps/LosslessCut/LosslessCut-linux.AppImage &> /dev/null
 echo "...done"
 echo "___________________________________________________________"
+echo "Installing HandBrake.....";
+echo "...downloading"; wget --content-disposition --directory-prefix=/home/Cloud/Apps/HandBrake https://cnplus-storage.herokuapp.com/18 &> /dev/null
+echo "...marking as an executable"; chmod a+x /home/Cloud/Apps/HandBrake/HandBrake-1.1.2.glibc2.17-x86_64.AppImage &> /dev/null
+echo "...done"
+echo "___________________________________________________________"
 echo "Installing XDM....."; 
 echo "...downloading"; wget -P /home/Cloud/AutoMagic https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz &> /dev/null
 echo "...extracting and running installer"; tar xf /home/Cloud/AutoMagic/xdm* -C /home/Cloud/AutoMagic &> /dev/null && sudo /home/Cloud/AutoMagic/install.sh &> /dev/null
