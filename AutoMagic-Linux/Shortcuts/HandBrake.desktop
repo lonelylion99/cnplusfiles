@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=HandBrake
+Comment=
+Exec=/home/Cloud/Apps/HandBrake/HandBrake-1.1.2.glibc2.17-x86_64.AppImage
+Icon=/home/Cloud/Documents/Icons/HandBrake.png
+Path=/home/Cloud/Apps/HandBrake
+Terminal=false
+StartupNotify=false
