@@ -9,7 +9,7 @@ echo "Downloading Wallpapers....."; wget -P /home/Cloud/AutoMagic https://raw.gi
 echo "..done"
 echo "___________________________________________________________"
 echo "Installing Telegram....."; 
-echo "...downloading"; wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://telegram.org/dl/desktop/linux &> /dev/null 
+echo "...downloading"; wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://github.com/telegramdesktop/tdesktop/releases/download/v3.0.1/tsetup.3.0.1.tar.xz &> /dev/null 
 echo "...extracting"; mkdir /home/Cloud/Apps &> /dev/null && tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/Apps 
 echo "...done";
 echo "___________________________________________________________"
