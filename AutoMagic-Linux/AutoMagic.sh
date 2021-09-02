@@ -9,11 +9,11 @@ echo "Downloading Wallpapers....."; wget -P /home/Cloud/AutoMagic https://raw.gi
 echo "..done"
 echo "___________________________________________________________"
 echo "Installing Firefox.....";
-echo "...downloading"; wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://download-installer.cdn.mozilla.net/pub/firefox/releases/91.0.2/linux-x86_64/en-US/firefox-91.0.2.tar.bz2
-echo "...extracting"; tar xjf firefox-*.tar.bz2 -C /home/Cloud/Apps
+echo "...downloading"; wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://download-installer.cdn.mozilla.net/pub/firefox/releases/91.0.2/linux-x86_64/en-US/firefox-91.0.2.tar.bz2  &> /dev/null
+echo "...extracting"; tar xjf firefox-*.tar.bz2 -C /home/Cloud/Apps  &> /dev/null
 echo "...done";
 echo "___________________________________________________________"
-echo "Installing Chromium Browser"; sudo apt install chromium-browser
+echo "Installing Chromium Browser"; sudo apt install chromium-browser &> /dev/null
 echo "...done";
 echo "___________________________________________________________"
 echo "Installing Telegram....."; 
@@ -54,7 +54,8 @@ wget -P /home/Cloud/AutoMagic https://raw.githubusercontent.com/lonelylion99/cnp
 unzip /home/Cloud/AutoMagic/Shortcuts.zip -d /home/Cloud/Desktop &> /dev/null
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/HandBrake.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/HandBrake.desktop
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Firefox.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/Firefox.desktop
-wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/chromium-browser.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/chromium-browser.desktop && xfdesktop --reload
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/chromium-browser.desktop &> /dev/null && chmod a+x /home/Cloud/Desktop/chromium-browser.desktop && xfdesktop --reload
+xfdesktop --reload
 echo "...done"
 echo "___________________________________________________________"
 echo "Cleaning up..."; rm -r /home/Cloud/AutoMagic && rm /home/Cloud/AutoMagic.sh
