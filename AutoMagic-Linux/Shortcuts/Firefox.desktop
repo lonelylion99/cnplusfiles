@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Firefox
+Comment=
+Exec=/home/Cloud/Apps/firefox/firefox
+Icon=/home/Cloud/Documents/Icons/Firefox.png
+Path=/home/Cloud/Apps/firefox
+Terminal=false
+StartupNotify=false
