@@ -8,6 +8,14 @@ echo "___________________________________________________________"
 echo "Downloading Wallpapers....."; wget -P /home/Cloud/AutoMagic https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Wallpapers.zip &> /dev/null && unzip /home/Cloud/AutoMagic/Wallpapers.zip -d /home/Cloud/Pictures &> /dev/null && xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/last-image -s /home/Cloud/Pictures/5.jpeg &> /dev/null
 echo "..done"
 echo "___________________________________________________________"
+echo "Installing Firefox.....";
+echo "...downloading"; wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://download-installer.cdn.mozilla.net/pub/firefox/releases/91.0.2/linux-x86_64/en-US/firefox-91.0.2.tar.bz2
+echo "...extracting"; tar xjf firefox-*.tar.bz2 -C /home/Cloud/Apps
+echo "...done";
+echo "___________________________________________________________"
+echo "Installing Chromium Browser"; sudo apt install chromium-browser
+echo "...done";
+echo "___________________________________________________________"
 echo "Installing Telegram....."; 
 echo "...downloading"; wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://github.com/telegramdesktop/tdesktop/releases/download/v3.0.1/tsetup.3.0.1.tar.xz &> /dev/null 
 echo "...extracting"; mkdir /home/Cloud/Apps &> /dev/null && tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/Apps 
