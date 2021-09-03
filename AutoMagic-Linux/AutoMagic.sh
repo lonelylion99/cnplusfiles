@@ -43,19 +43,26 @@ echo "___________________________________________________________"
 echo "Installing Sublime (Notepad)"; wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - &> /dev/null && sudo apt-get install apt-transport-https &> /dev/null && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list &> /dev/null && sudo apt-get update &> /dev/null && sudo apt-get install sublime-text &> /dev/null
 echo "...done"
 echo "___________________________________________________________"
-echo "Downloading Icons....."; wget -P /home/Cloud/AutoMagic https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons.zip &> /dev/null && unzip /home/Cloud/AutoMagic/Icons.zip -d /home/Cloud/Documents &> /dev/null
+echo "Downloading Icons.....";
+wget -P /home/Cloud/AutoMagic https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons.zip &> /dev/null && unzip /home/Cloud/AutoMagic/Icons.zip -d /home/Cloud/Documents &> /dev/null
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/HandBrake.png &> /dev/null
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Firefox.png &> /dev/null
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Chromium.png &> /dev/null
+wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Notepad.png &> /dev/null
 echo "...done"
 echo "___________________________________________________________"
 echo "Creating Shortcuts...."; 
-wget -P /home/Cloud/AutoMagic https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts.zip &> /dev/null
-unzip /home/Cloud/AutoMagic/Shortcuts.zip -d /home/Cloud/Desktop &> /dev/null
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Movies.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/Movies.desktop
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Google-Drive.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/Google-Drive.desktop
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/file-roller.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/file-roller.desktop
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/HandBrake.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/HandBrake.desktop
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/google-chrome.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/google-chrome.desktop
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/chromium-browser.desktop.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/chromium-browser.desktop.desktop
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Firefox.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/Firefox.desktop
-wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/chromium-browser.desktop &> /dev/null && chmod a+x /home/Cloud/Desktop/chromium-browser.desktop && xfdesktop --reload
-xfdesktop --reload
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/LosslessCut.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/LosslessCut.desktop
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Telegram.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/Telegram.desktop
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/sublime_text.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/sublime_text.desktop
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/xdman.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/xdman.desktop
 echo "...done"
 echo "___________________________________________________________"
 echo "Cleaning up..."; rm -r /home/Cloud/AutoMagic && rm /home/Cloud/AutoMagic.sh
