@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Movies
+Comment=
+Exec=thunar /home/Cloud/Downloads/Video/
+Icon=folder-videos
+Path=
+Terminal=false
+StartupNotify=false

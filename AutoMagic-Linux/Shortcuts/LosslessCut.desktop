@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=LosslessCut
+Comment=
+Exec=/home/Cloud/Apps/LosslessCut/LosslessCut-linux.AppImage
+Icon=totem
+Path=/home/Cloud/Apps/LosslessCut
+Terminal=false
+StartupNotify=false

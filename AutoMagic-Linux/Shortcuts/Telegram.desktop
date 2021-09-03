@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Telegram
+Comment=
+Exec=/home/Cloud/Apps/Telegram/Telegram
+Icon=/home/Cloud/Documents/Icons/Telegram.png
+Path=/home/Cloud/Apps/Telegram
+Terminal=false
+StartupNotify=false
