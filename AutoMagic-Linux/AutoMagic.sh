@@ -23,7 +23,7 @@ echo "___________________________________________________________"
 echo "Installing Chromium Browser"; sudo apt install chromium-browser &> /dev/null
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Chromium.png &> /dev/null
 echo "...done";
-wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/chromium-browser.desktop.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/chromium-browser.desktop.desktop
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/chromium-browser.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/chromium-browser.desktop
 echo "___________________________________________________________"
 echo "Installing Telegram....."; 
 echo "...downloading"; wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://github.com/telegramdesktop/tdesktop/releases/download/v3.0.1/tsetup.3.0.1.tar.xz &> /dev/null 
