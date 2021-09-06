@@ -11,6 +11,7 @@ wget -P /home/Cloud/AutoMagic https://raw.githubusercontent.com/lonelylion99/cnp
 echo "..let's start!";
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Movies.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/Movies.desktop
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Google-Drive.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/Google-Drive.desktop
+wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Chrome.png &> /dev/null  
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/google-chrome.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/google-chrome.desktop
 echo "___________________________________________________________"
 echo "Installing Firefox.....";
