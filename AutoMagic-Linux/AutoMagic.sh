@@ -20,7 +20,7 @@ echo "...done";
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Firefox.png &> /dev/null
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Firefox.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/Firefox.desktop
 echo "___________________________________________________________"
-echo "Installing Chromium Browser"; sudo apt install chromium-browser &> /dev/null
+echo "Installing Chromium Browser....."; sudo apt install chromium-browser &> /dev/null
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Chromium.png &> /dev/null
 echo "...done";
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/chromium-browser.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/chromium-browser.desktop
