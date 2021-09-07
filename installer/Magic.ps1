@@ -91,6 +91,10 @@ choco install vb-cable | out-null; Start-Process 'C:\ProgramData\chocolatey\lib\
 echo "...please install manually";
 echo "...done";
 echo "__________________________________________________________________________";
+echo "Downloading Wondershare Uniconverter...";
+Invoke-WebRequest -Uri 'https://cnplus-storage.herokuapp.com/35' -OutFile 'C:\Users\kiyoe\Desktop\Wondershare Uniconverter.zip' | out-null
+echo "...done"
+echo "__________________________________________________________________________";
 echo "Everything is done";
 echo "
 ▒█▀▀█ ▒█░░▒█ ▒█▀▀▀ 
