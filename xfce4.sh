@@ -1,4 +1,4 @@
-echo "Ngrok အရင်ဒေါင်းမေ..."
+echo "Ngrok ဒေါင်းမေ..."
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok-stable-linux-amd64.zip.1 > /dev/null 2>&1
