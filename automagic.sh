@@ -12,8 +12,8 @@ wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/google-chrome.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/google-chrome.desktop
 echo "___________________________________________________________"
 echo "Installing Google Chrome....."
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &> /dev/null
+sudo dpkg -i google-chrome-stable_current_amd64.deb &> /dev/null
 echo "...done"
 echo "___________________________________________________________"
 echo "Installing Mozilla Firefox.....";
