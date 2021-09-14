@@ -10,10 +10,6 @@ echo "၂ မိနစ်လောက်စောင့်"
 echo "__________________________________________"
 sudo apt-get update > /dev/null 2>&1
 echo "__________________________________________"
-echo "Firefox ထည့်မေ..."
-sudo apt install firefox -y > /dev/null 2>&1
-echo "...ပီးပီ"
-echo "__________________________________________"
 echo "RDP ထည့်နေပီ..."
 sudo apt install -y xrdp > /dev/null 2>&1
 sudo apt install xfce4 -y > /dev/null 2>&1
