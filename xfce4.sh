@@ -14,6 +14,7 @@ echo "RDP ထည့်နေပီ..."
 sudo apt install -y xrdp > /dev/null 2>&1
 sudo apt install xfce4 -y > /dev/null 2>&1
 sudo apt-get install xfce4 xfce4-terminal -y > /dev/null 2>&1
+xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitor0/workspace0/last-image -s /home/Cloud/Pictures/7.jpg &> /dev/null
 echo "...ပီးပီ"
 echo "__________________________________________"
 echo "Start RDP"
