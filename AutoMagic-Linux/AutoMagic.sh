@@ -53,6 +53,8 @@ echo "Installing Sublime (Notepad)"; wget -qO - https://download.sublimetext.com
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Notepad.png &> /dev/null
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/sublime_text.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/sublime_text.desktop
 echo "___________________________________________________________"
+echo "Installing PlayOnLinux....."; sudo apt install playonlinux &> /dev/null
+echo "___________________________________________________________"
 echo "Cleaning up..."; rm -r /home/Cloud/AutoMagic && rm /home/Cloud/AutoMagic.sh
 echo "Everthing is ready !!"
 echo "
