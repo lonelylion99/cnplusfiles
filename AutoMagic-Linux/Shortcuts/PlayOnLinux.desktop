@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PlayOnLinux
+Comment=Front-end application for the wine
+Exec=playonlinux %F
+Icon=playonlinux
+Path=
+Terminal=false
+StartupNotify=false
