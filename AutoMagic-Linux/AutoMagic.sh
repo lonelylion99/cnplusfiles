@@ -13,6 +13,7 @@ wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplu
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Chrome.png &> /dev/null  
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/google-chrome.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/google-chrome.desktop
 echo "___________________________________________________________"
+<<cnplus
 echo "Installing Firefox.....";
 echo "...downloading"; wget -P /home/Cloud/AutoMagic https://download-installer.cdn.mozilla.net/pub/firefox/releases/92.0/linux-x86_64/en-US/firefox-92.0.tar.bz2  &> /dev/null
 echo "...extracting"; mkdir /home/Cloud/Apps &> /dev/null && tar xjf /home/Cloud/AutoMagic/firefox-*.tar.bz2 -C /home/Cloud/Apps  &> /dev/null
@@ -22,6 +23,7 @@ echo "Installing Chromium Browser....."; sudo apt install chromium-browser &> /d
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Chromium.png &> /dev/null
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/chromium-browser.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/chromium-browser.desktop
 echo "___________________________________________________________"
+cnplus
 echo "Installing Telegram....."; 
 echo "...downloading"; wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://github.com/telegramdesktop/tdesktop/releases/download/v3.0.1/tsetup.3.0.1.tar.xz &> /dev/null 
 echo "...extracting"; tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/Apps 
