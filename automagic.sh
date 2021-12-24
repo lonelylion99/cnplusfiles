@@ -57,6 +57,7 @@ wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/sublime_text.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/sublime_text.desktop
 echo "___________________________________________________________"
 echo "Installing PlayOnLinux....."; sudo apt install playonlinux &> /dev/null
+wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/PlayOnLinux.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/PlayOnLinux.desktop
 echo "___________________________________________________________"
 echo "Cleaning up..."; rm -r /home/Cloud/AutoMagic
 echo "Changing Ownerships..."; chown -hvR Cloud /home/Cloud  &> /dev/null
