@@ -61,6 +61,7 @@ sudo apt install wine-stable &> /dev/null
 sudo dpkg --add-architecture i386 && apt-get update && apt-get install wine32 &> /dev/null
 wget -P /home/Cloud/AutoMagic https://www.playonlinux.com/script_files/PlayOnLinux/4.3.4/PlayOnLinux_4.3.4.deb &> /dev/null
 sudo dpkg -i /home/Cloud/AutoMagic/P* &> /dev/null
+sudo apt-get install -y xterm &> /dev/null
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/PlayOnLinux.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/PlayOnLinux.desktop
 echo "___________________________________________________________"
 echo "Cleaning up..."; rm -r /home/Cloud/AutoMagic
