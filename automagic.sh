@@ -27,9 +27,9 @@ echo "...done";
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/chromium-browser.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/chromium-browser.desktop
 echo "___________________________________________________________"
 cnp
+
 echo "Installing Telegram....."; 
-echo "...downloading"; wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://github.com/telegramdesktop/tdesktop/releases/download/v3.0.1/tsetup.3.0.1.tar.xz &> /dev/null
-echo "...extracting"; tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/Apps
+wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://github.com/telegramdesktop/tdesktop/releases/download/v3.0.1/tsetup.3.0.1.tar.xz &> /dev/null && tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/Apps
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Telegram.desktop &> /dev/null && chmod a+x /home/Cloud/Desktop/Telegram.desktop
 echo "___________________________________________________________"
 echo "Installing LosslessCut....."; 
