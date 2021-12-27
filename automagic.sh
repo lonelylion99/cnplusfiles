@@ -29,6 +29,7 @@ echo "___________________________________________________________"
 cnp
 
 echo "Installing Telegram....."; 
+mkdir /home/Cloud/Apps &> /dev/null;
 wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://github.com/telegramdesktop/tdesktop/releases/download/v3.0.1/tsetup.3.0.1.tar.xz &> /dev/null && tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/Apps
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Telegram.desktop &> /dev/null && chmod a+x /home/Cloud/Desktop/Telegram.desktop
 echo "___________________________________________________________"
