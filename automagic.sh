@@ -58,11 +58,11 @@ wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/sublime_text.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/sublime_text.desktop
 echo "___________________________________________________________"
 echo "Installing PlayOnLinux....."; 
-sudo apt --fix-broken install &> /dev/null
 sudo apt install wine-stable &> /dev/null
 sudo dpkg --add-architecture i386 && apt-get update && apt-get install wine32 &> /dev/null
 wget -P /home/Cloud/AutoMagic https://www.playonlinux.com/script_files/PlayOnLinux/4.3.4/PlayOnLinux_4.3.4.deb &> /dev/null
 sudo dpkg -i /home/Cloud/AutoMagic/PlayOnLinux_4.3.4.deb &> /dev/null
+sudo apt --fix-broken install &> /dev/null
 sudo apt-get install -y xterm &> /dev/null
 sudo apt-get install netcat &> /dev/null
 sudo apt-get install gettext &> /dev/null
