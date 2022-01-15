@@ -28,7 +28,7 @@ cnp
 
 echo "Installing Telegram....."; 
 mkdir /home/Cloud/Apps &> /dev/null;
-wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://github.com/telegramdesktop/tdesktop/releases/download/v3.0.1/tsetup.3.0.1.tar.xz &> /dev/null && tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/Apps
+wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://github.com/telegramdesktop/tdesktop/releases/download/v3.4.3/tsetup.3.4.3.tar.xz &> /dev/null && tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/Apps
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Telegram.desktop &> /dev/null && chmod a+x /home/Cloud/Desktop/Telegram.desktop
 
 echo "Installing LosslessCut....."; 
@@ -37,7 +37,7 @@ chmod a+x /home/Cloud/Apps/LosslessCut/LosslessCut-linux.AppImage &> /dev/null
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/LosslessCut.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/LosslessCut.desktop
 
 echo "Installing HandBrake.....";
-wget --content-disposition --directory-prefix=/home/Cloud/Apps/HandBrake https://cnplus-storage.herokuapp.com/18 &> /dev/null
+wget --content-disposition --directory-prefix=/home/Cloud/Apps/HandBrake https://github.com/cmatomic/Handbrake-AppImage/releases/download/continuous/HandBrake-1.1.2.glibc2.17-x86_64.AppImage &> /dev/null
 chmod a+x /home/Cloud/Apps/HandBrake/HandBrake-1.1.2.glibc2.17-x86_64.AppImage &> /dev/null
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/HandBrake.png &> /dev/null
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/HandBrake.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/HandBrake.desktop
