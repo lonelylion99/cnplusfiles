@@ -10,11 +10,11 @@ wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplu
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/Google-Drive.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/Google-Drive.desktop
 wget -P /home/Cloud/Documents/Icons https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Icons/Chrome.png &> /dev/null  
 wget -P /home/Cloud/Desktop https://raw.githubusercontent.com/lonelylion99/cnplusfiles/main/AutoMagic-Linux/Shortcuts/google-chrome.desktop &> /dev/null &&  chmod a+x /home/Cloud/Desktop/google-chrome.desktop
+
+<<cnp
 echo "Installing Google Chrome....."
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &> /dev/null
 sudo dpkg -i google-chrome-stable_current_amd64.deb &> /dev/null
-
-<<cnp
 echo "Installing Mozilla Firefox.....";
 echo "...downloading"; wget -P /home/Cloud/AutoMagic https://download-installer.cdn.mozilla.net/pub/firefox/releases/92.0/linux-x86_64/en-US/firefox-92.0.tar.bz2  &> /dev/null
 echo "...extracting"; mkdir /home/Cloud/Apps &> /dev/null && tar xjf /home/Cloud/AutoMagic/firefox-*.tar.bz2 -C /home/Cloud/Apps  &> /dev/null
