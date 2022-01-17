@@ -29,9 +29,9 @@ echo ""
 echo "Styling desktop..."
 sudo apt install xfce4-whiskermenu-plugin &> /dev/null
 sudo apt install arc-theme &> /dev/null
-wget https://storage.channelplus.workers.dev/0:/!MISC/RDP/My.RDP.Backup.tar.gz &> /dev/null
-tar xf My.RDP.Backup.tar.gz &> /dev/null
-rm My.RDP.Backup.tar.gz &> /dev/null
+wget -P "/home/Cloud/" https://storage.channelplus.workers.dev/0:/!MISC/RDP/My.RDP.Backup.tar.gz &> /dev/null
+tar xf My.RDP.Backup.tar.gz -C "/home/Cloud/" &> /dev/null
+rm /home/Cloud/My.RDP.Backup.tar.gz &> /dev/null
 echo ""
 echo "Mounting Channel+ Storage"
 curl https://rclone.org/install.sh | sudo bash &> /dev/null
