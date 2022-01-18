@@ -32,6 +32,7 @@ sudo apt install arc-theme &> /dev/null
 wget -P "/home/Cloud/" https://storage.channelplus.workers.dev/0:/!MISC/RDP/My.RDP.Backup.tar.gz &> /dev/null
 tar xf /home/Cloud/My.RDP.Backup.tar.gz -C "/home/Cloud/" &> /dev/null
 rm /home/Cloud/My.RDP.Backup.tar.gz &> /dev/null
+sudo apt install fonts-roboto
 echo ""
 echo ""
 echo "Mounting Channel+ Storage"
