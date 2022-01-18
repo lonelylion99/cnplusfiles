@@ -3,7 +3,7 @@ echo "
 █▀█ █▄█ ░█░ █▄█ █░▀░█ █▀█ █▄█ █ █▄▄"
 echo ""
 echo ""
-echo "Installing essential softwares..."; set +H
+echo "Installing essential softwares...";
 
 echo "- Archive Manager"
 sudo apt update &> /dev/null
@@ -37,12 +37,12 @@ rm Roboto_Mono.zip &> /dev/null
 rm Roboto.zip &> /dev/null
 sudo apt install xfce4-whiskermenu-plugin &> /dev/null
 sudo apt install arc-theme &> /dev/null
-wget -P "/home/Cloud/" https://storage.channelplus.workers.dev/0:/!MISC/RDP/My.RDP.Backup.tar.gz &> /dev/null
+wget -P "/home/Cloud/" 'https://storage.channelplus.workers.dev/0:/!MISC/RDP/My.RDP.Backup.tar.gz' &> /dev/null
 tar xf /home/Cloud/My.RDP.Backup.tar.gz -C "/home/Cloud/" &> /dev/null
 rm /home/Cloud/My.RDP.Backup.tar.gz &> /dev/null
 echo ""
 echo "Importing Chrome data..."
-wget -P "/home/Cloud/" https://storage.channelplus.workers.dev/0:/!MISC/RDP/chrome.backup.tar.gz &> /dev/null
+wget -P "/home/Cloud/" 'https://storage.channelplus.workers.dev/0:/!MISC/RDP/chrome.backup.tar.gz' &> /dev/null
 tar xf /home/Cloud/chrome.backup.tar.gz -C "/home/Cloud/" &> /dev/null
 rm /home/Cloud/chrome.backup.tar.gz &> /dev/null
 echo ""
@@ -50,7 +50,7 @@ echo ""
 echo "Mounting Channel+ Storage"
 curl https://rclone.org/install.sh | sudo bash &> /dev/null
 mkdir "/home/Cloud/Channel+ Storage" &> /dev/null
-wget -O rclone.conf https://storage.channelplus.workers.dev/0:/!MISC/RDP/rclone.conf &> /dev/null
+wget -O rclone.conf 'https://storage.channelplus.workers.dev/0:/!MISC/RDP/rclone.conf' &> /dev/null
 mv rclone.conf /home/Cloud/.config/rclone/rclone.conf &> /dev/null
 rclone mount --daemon cnplus: "/home/Cloud/Channel+ Storage" &> /dev/null
 echo ""
