@@ -6,8 +6,8 @@ echo ""
 echo "Installing essential softwares..."
 
 echo "- Archive Manager"
-sudo apt-get update -y &> /dev/null
-sudo apt-get install -y xarchiver &> /dev/null
+sudo apt update &> /dev/null
+sudo apt install file-roller &> /dev/null
 sudo apt-get install -y thunar-archive-plugin &> /dev/null
 
 echo "- Task Manager"
