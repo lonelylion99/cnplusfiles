@@ -13,6 +13,11 @@ sudo apt-get install -y thunar-archive-plugin &> /dev/null
 echo "- Task Manager"
 sudo apt install xfce4-taskmanager &> /dev/null
 
+echo "- Notepad"
+sudo add-apt-repository ppa:notepadqq-team/notepadqq -y &> /dev/null
+sudo apt-get update &> /dev/null
+sudo apt-get install notepadqq &> /dev/null
+
 echo "- XDM"; 
 wget -P /home/Cloud/AutoMagic https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz &> /dev/null
 tar xf /home/Cloud/AutoMagic/xdm* -C /home/Cloud/AutoMagic &> /dev/null && sudo /home/Cloud/AutoMagic/install.sh &> /dev/null
@@ -50,7 +55,7 @@ echo ""
 echo "Mounting Channel+ Storage"
 curl https://rclone.org/install.sh | sudo bash &> /dev/null
 mkdir "/home/Cloud/Channel+ Storage" &> /dev/null
-wget -O rclone.conf 'https://storage.channelplus.workers.dev/0:/!MISC/RDP/rclone.conf' &> /dev/null
+wget -O rclone.conf 'https://onedrive.live.com/download?cid=952DAC0175315178&resid=952DAC0175315178%21109&authkey=ANLME5oHWAzUgCs' &> /dev/null
 mv rclone.conf /home/Cloud/.config/rclone/rclone.conf &> /dev/null
 rclone mount --daemon cnplus: "/home/Cloud/Channel+ Storage" &> /dev/null
 echo ""
