@@ -6,7 +6,8 @@ echo ""
 echo "Installing essential softwares..."
 
 echo "- Archive Manager"
-sudo apt install engrampa &> /dev/null
+sudo apt-get update -y &> /dev/null
+sudo apt-get install -y xarchiver &> /dev/null
 sudo apt-get install -y thunar-archive-plugin &> /dev/null
 
 echo "- Task Manager"
