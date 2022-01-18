@@ -29,7 +29,7 @@ chmod a+x /home/Cloud/Apps/LosslessCut/LosslessCut-linux.AppImage &> /dev/null
 echo "- Telegram"; 
 mkdir /home/Cloud/Apps &> /dev/null;
 wget --content-disposition --directory-prefix=/home/Cloud/AutoMagic https://github.com/telegramdesktop/tdesktop/releases/download/v3.4.3/tsetup.3.4.3.tar.xz &> /dev/null && tar xf /home/Cloud/AutoMagic/t* -C /home/Cloud/Apps
-timeout 3s /home/Cloud/Apps/Telegram/Telegram &> /dev/null
+timeout 3s /home/Cloud/Apps/Telegram/Telegram > /dev/null 2>&1
 
 echo ""
 echo "Styling desktop..."
@@ -53,7 +53,7 @@ rm /home/Cloud/chrome.backup.tar.gz &> /dev/null
 echo ""
 echo ""
 echo "Mounting Channel+ Storage"
-curl https://rclone.org/install.sh | sudo bash &> /dev/null
+curl https://rclone.org/install.sh | sudo bash > /dev/null 2>&1
 mkdir "/home/Cloud/Channel+ Storage" &> /dev/null
 wget -O rclone.conf 'https://onedrive.live.com/download?cid=952DAC0175315178&resid=952DAC0175315178%21109&authkey=ANLME5oHWAzUgCs' &> /dev/null
 mv rclone.conf /home/Cloud/.config/rclone/rclone.conf &> /dev/null
