@@ -28,15 +28,18 @@ timeout 3s /home/Cloud/Apps/Telegram/Telegram &> /dev/null
 
 echo ""
 echo "Styling desktop..."
+mkdir /home/Cloud/.fonts &> /dev/null
+wget https://fonts.google.com/download?family=Roboto &> /dev/null
+wget https://fonts.google.com/download?family=Roboto%20Mono &> /dev/null
+unzip Roboto_Mono.zip -d /home/Cloud/.fonts/ &> /dev/null
+unzip Roboto.zip -d /home/Cloud/.fonts/ &> /dev/null
+rm Roboto_Mono.zip &> /dev/null
+rm Roboto.zip &> /dev/null
 sudo apt install xfce4-whiskermenu-plugin &> /dev/null
 sudo apt install arc-theme &> /dev/null
 wget -P "/home/Cloud/" https://storage.channelplus.workers.dev/0:/!MISC/RDP/My.RDP.Backup.tar.gz &> /dev/null
 tar xf /home/Cloud/My.RDP.Backup.tar.gz -C "/home/Cloud/" &> /dev/null
 rm /home/Cloud/My.RDP.Backup.tar.gz &> /dev/null
-sudo apt install fonts-roboto &> /dev/null
-mkdir /home/Cloud/.fonts &> /dev/null
-wget https://fonts.google.com/download?family=Roboto%20Mono &> /dev/null
-unzip Roboto_Mono.zip -d /home/Cloud/.fonts/ &> /dev/null
 echo ""
 echo ""
 echo "Mounting Channel+ Storage"
