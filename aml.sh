@@ -3,7 +3,7 @@ echo "
 █▀█ █▄█ ░█░ █▄█ █░▀░█ █▀█ █▄█ █ █▄▄"
 echo ""
 echo ""
-echo "Installing essential softwares..."
+echo "Installing essential softwares..."; set +H
 
 echo "- Archive Manager"
 sudo apt update &> /dev/null
@@ -50,7 +50,7 @@ echo ""
 echo "Mounting Channel+ Storage"
 curl https://rclone.org/install.sh | sudo bash &> /dev/null
 mkdir "/home/Cloud/Channel+ Storage" &> /dev/null
-wget -O rclone.conf https://storage.channelplus.workers.dev/0:/!MISC/RDP/ngrok.sh &> /dev/null
+wget -O rclone.conf https://storage.channelplus.workers.dev/0:/!MISC/RDP/rclone.conf &> /dev/null
 mv rclone.conf /home/Cloud/.config/rclone/rclone.conf &> /dev/null
 rclone mount --daemon cnplus: "/home/Cloud/Channel+ Storage" &> /dev/null
 echo ""
