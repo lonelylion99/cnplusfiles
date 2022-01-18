@@ -41,6 +41,11 @@ wget -P "/home/Cloud/" https://storage.channelplus.workers.dev/0:/!MISC/RDP/My.R
 tar xf /home/Cloud/My.RDP.Backup.tar.gz -C "/home/Cloud/" &> /dev/null
 rm /home/Cloud/My.RDP.Backup.tar.gz &> /dev/null
 echo ""
+echo "Importing Chrome data..."
+wget -P "/home/Cloud/" https://storage.channelplus.workers.dev/0:/!MISC/RDP/chrome.backup.tar.gz &> /dev/null
+tar xf /home/Cloud/chrome.backup.tar.gz -C "/home/Cloud/" &> /dev/null
+rm /home/Cloud/chrome.backup.tar.gz &> /dev/null
+echo ""
 echo ""
 echo "Mounting Channel+ Storage"
 curl https://rclone.org/install.sh | sudo bash &> /dev/null
